@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real alien footage</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        font-family: monospace;
+        color: rgb(85, 85, 85);
+    }
+
+    a{
+        color: rgb(85, 85, 85);
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    div {
+        text-align: center;
+        padding: 15px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+    } 
+</style>
+<body>
+    <div>
+        <img src="marcianito.gif"><br><br>
+        <audio autoplay>
+            <source src="Antonio Rios Nunca me Faltes.mp3" type="audio/mpeg">
+        </audio>
+        <a onclick="play()">if your browser is stupid and homophobic and blocks autoplay click here</a>
+    </div>
+
+    <script>
+        function play() {
+        var audio = new Audio('Antonio Rios Nunca me Faltes.mp3');
+        audio.play();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuro's room</title>
+    <meta name="description" content="Kuro2427's very own website on the internet">
+    <link rel="stylesheet" href="assets/xp.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MV3KFV11RC"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MV3KFV11RC');
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="lastfmNP.js"></script>
+</head>
+
+<body>
+    <main>
+    <div class="window1">
+        <div class="title-bar">
+            <div class="title-bar-text">Home</div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+
+        <div class="namecard"><img src="assets/lain.gif" width="50vw">&nbsp;&nbsp;<img src="assets/name1.png" width="270vw" height id="plate">&nbsp;&nbsp;<img src="assets/lain.gif" width="50vw"></div>
+        <div class="center"><span id="cap">Random caption goes here</span> <a onclick="refreshCap()" style="cursor:pointer;"><img src="assets/refresh.png" style="margin-bottom:-4px;"></a></div><br>
+        <div class="center">
+            <a href="http://kuro2427.tumblr.com"><img src="assets/tumblr.svg" width="20px"></a> 
+            <a href="http://twitter.com/kuro2427"><img src="assets/twitter.svg" width="20px"></a>
+            <a href="https://cohost.org/kuro2427"><img src="assets/cohost.png" width="20px"></a>
+            <a href="https://steamcommunity.com/id/Kuro2427/"><img src="assets/steam.svg" width="20px" style="border-radius:2px;"></a>
+            <a href="https://www.last.fm/user/Kuro2427"><img src="assets/lastfm.svg" width="20px"></a>
+            <a href="https://myanimelist.net/profile/Kuro2427"><img src="assets/mal.png" width="20px" style="border-radius:2px;"></a>
+            <a href="disordInfo.html"><img src="assets/discord.svg" width="20px" style="margin-bottom:-3px; cursor: pointer;"></a>
+            
+        </div><br>
+
+        <div class="center">
+            <button onclick="scrollTowards(0)">The spotlight</button>
+            <button onclick="scrollTowards(3)">The dashboard</button>
+            <button onclick="scrollTowards(1)">The corkboard</button>
+            <button onclick="scrollTowards(2)">Credits</button>
+        </div><br>
+    </div>
+
+    <div class="window1" id=0>
+        <div class="title-bar">
+            <div class="title-bar-text">The spotlight (yeah, it's a blog in 2022)</div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+    
+    <div class="content">
+        <div class="article">
+            <a href="http://kuro.gay/spotlight/welcome/" target="_blank"><img src="spotlight/welcome/articlepreview.png" alt="Article preview">
+            <h1>Welcome to Kuro's room!!</a><img src="assets/sticky.gif"></h1>
+            <p>A quick introduction to Kuro's room and the spotlight blog!<br>
+            04/11/2022 6:28PM</p>
+        </div>
+        <hr>
+        <div class="article">
+            <a href="http://kuro.gay/spotlight/motherfuckingwebsite/" target="_blank"><img src="spotlight/motherfuckingwebsite/articlepreview.png" alt="Article preview">
+            <h1>The motherfucking website saga: Peak internet interaction</a></h1>
+            <p>A tale of little stylesheets and lots of swear words<br>
+            04/12/2022 1:00 PM</p>
+        </div>
+    </div>
+</div>
+
+    <div class="window1" id=3>
+        <div class="title-bar">
+            <div class="title-bar-text">The dashboard (wtf kuro stats???)</div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+
+        <div class="content">
+            <h1>
+                Current hyperfixations:
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=cE2hd1mKDZM&list=PLibm-rpGR0iD8pJdfYJCFtw4OZUxuUCuM">One by CheesyHFJ</a></li>
+                    <li>toki pona</li>
+                    <li>The Phantom of the Opera</li>
+                    <li>Flip phones</li>
+                </ul>
+            </h1>
+            <hr>
+            <h1>
+                Current media:
+                <ul>
+                    <li>Digimon Survive</li>
+                    <li>The Walking Dead (Telltale)</li>
+                    <li>Klonoa Phantasy Reverie Series</li>
+                </ul>
+            </h1>
+            <hr>
+            <br>
+                <div class="nowplayingcard">
+                    <div class="nowplayingcontainer-inner">
+                        <img id="trackart" src="#" width="100px">
+                        <h1>Latest last.fm scrobble:</h1>
+                        <div class="trackInfo">
+                            <a id="tracktitle"></a><br>
+                            By <a href="#" id="trackartist"></a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="center">
+                    Right now I'm: <a href="https://www.imood.com/users/kuro2427"><img src="https://moods.imood.com/display/uname-kuro2427/trans-1/imood.gif" alt="The current mood of kuro2427 at www.imood.com" border="0" style="margin-bottom: -3px;"></a></div><br>
+                </div>
+                </div>
+                </div>
+
+        <div class="window1" id=1>
+        <div class="title-bar">
+            <div class="title-bar-text">The corkboard (cool online places)</div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+
+        <div class="content">
+            <a href="http://trickmint.gay/"><h1>trickmint.gay</a></h1>
+            <p>Trickmint's swag personal page. If you have autoplay enabled on your browser, you can hear a random song playing in the background. It's still a work-in-progress but it's funny anyways.</p>
+        </div>
+        <hr>
+        <div class="content">
+            <a href="https://sasaja.neocities.org/"><h1>sasaja.neocities.org</a></h1>
+            <p>Literal 10/10 web design and taste in media.</p>
+        </div>
+        <hr>
+        <div class="content">
+            <a href="http://skedgy.xyz/"><h1>skedgy.xyz</a></h1>
+            <p>GIRLFRIENDGIRLFRIENDGIRLFRIENDGIRLFRIEND</p>
+        </div>
+        <hr>
+        <div class="content">
+            <a href="http://ballsackradio.com/"><h1>ballsackradio.com</a></h1>
+            <p>Genuinely the best online radio. It plays awesome music whenever it decides to work (top 10 rarest events in gaming).</p>
+        </div>
+        <hr>
+        <div class="content">
+            <a href="http://fox-info.net/"><h1>fox-info.net</a></h1>
+            <p>Awesome japanese website with fox images.</p>
+        </div>
+    </div>
+
+    <div class="window1" id=2>
+        <div class="title-bar">
+            <div class="title-bar-text">Credits</div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+          
+
+    <div class="content">
+        <div class="center">
+            <h1><a href="https://botoxparty.github.io/XP.css/">xp.css</a> theme by <a href="https://twitter.com/botoxparty">botoxparty</a>. | <a href="https://github.com/captbaritone/webamp">webamp</a> audio player by <a href="https://twitter.com/captbaritone/">Jordan Eldredge</a>. | <a href="https://webneko.net/">webneko</a> browser pet by ??? | <a href="https://codepen.io/Scarecr0w/pen/qxwMKo">last.fm scrobble embed thingy</a> by <a href="http://www.prashant.me/">Prashant Shrestha</a></h1>
+        </div>
+    </div>
+    </div>
+
+    <div class="window1" id=2>
+        <div class="title-bar">
+            <div class="title-bar-text">Button</div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+          
+
+    <div class="content">
+        <div class="center">
+            <h1>Promote my website for no reason!</h1>
+            <img src="assets/buttons/kuro.png">
+            <textarea rows="2" cols="40"><a href="http://kuro.gay"><img src="http://kuro.gay/assets/buttons/kuro.png"></a></textarea><br><br>
+            (You should probably not hotlink the image tho)
+        </div><br>
+    </div>
+    </div>
+
+    <div class="center">
+        <a href="https://www.hitwebcounter.com" target="_blank"><img src="https://hitwebcounter.com/counter/counter.php?page=7982275&style=0006&nbdigits=6&type=page&initCount=637" title="Free Counter" Alt="web counter"   border="0" /></a>       
+    </div><br>
+
+    </main>
+
+    <div class="center">
+    <marquee>
+        <img src="http://kuro.gay/assets/buttons/hatemac.jpg">
+        <img src="http://kuro.gay/assets/buttons/made_with_windows.gif">
+        <a href="https://www.mozilla.org/en-US/firefox/new/"><img src="http://kuro.gay/assets/buttons/get.gif"></a>
+        <a href="https://www.vgmusic.com/"><img src="http://kuro.gay/assets/buttons/midi_files_now.gif"></a>
+        <img src="http://kuro.gay/assets/buttons/gay.gif">
+        <a href="http://ballsackradio.com/"><img src="http://kuro.gay/assets/buttons/ballsack.png"></a>
+        <a href="https://cyber.dabamos.de/88x31/index.html"><img src="http://kuro.gay/assets/buttons/button_now.gif"></a>
+        <img src="http://kuro.gay/assets/buttons/amiga.gif">
+        <img src="http://kuro.gay/assets/buttons/beyes.gif">
+        <img src="http://kuro.gay/assets/buttons/copy_floppy.gif">
+        <img src="http://kuro.gay/assets/buttons/evangelion.gif">
+        <a href="https://www.w3schools.com/"><img src="http://kuro.gay/assets/buttons/html.gif"></a>
+        <a href="https://ermel.org/handcoded/"><img src="http://kuro.gay/assets/buttons/handcode.png"></a>
+        <a href="https://tokipona.org/"><img src="http://kuro.gay/assets/buttons/tokipona.png"></a>
+        <a href="http://fox-info.net/"><img src="http://kuro.gay/assets/buttons/foxinfo.png" width="88" height="33"></a>
+    </marquee>
+        <div class="updated">
+            Last updated: 11/01/2022 at 9:37 AM <span class="blink">_</span>
+        </div>
+        
+    </div>
+
+    <div class="apps" style="position: fixed; left:10%; top:20%; width: 0%;">
+    <script>NekoType="black"</script>
+    <h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a 
+    href="https://webneko.net">Neko</a></h1>
+    <div id="app" style="position:absolute; width:10%; height:10%; right:5%; bottom:20%"> </div>
+
+    <script src="https://unpkg.com/webamp@1.4.2/built/webamp.bundle.min.js"></script>
+    <script>
+        const Webamp = window.Webamp;
+        const webamp = new Webamp({
+            initialTracks: [
+                {
+                    metaData: {
+                        artist: "DJ Mike Llama",
+                        title: "Llama Whippin' Intro"
+                    },
+                    // NOTE: Your audio file must be served from the same domain as your HTML
+                    // file, or served with permissive CORS HTTP headers:
+                    // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+                    url: "https://cdn.jsdelivr.net/gh/captbaritone/webamp@43434d82cfe0e37286dbbe0666072dc3190a83bc/mp3/llama-2.91.mp3",
+                    duration: 5.322286
+                },
+                {
+                    metaData: {
+                        artist: "Tomodachi Collection OST",
+                        title: "Island at night"
+                    },
+                    url: "http://kuro.gay/music/tomodachiNight.mp3",
+                    duration: 151.0000
+                },
+                {
+                    metaData: {
+                        artist: "Animal Crossing Wild World OST",
+                        title: "3 AM"
+                    },
+                    url: "http://kuro.gay/music/acww3AM.mp3",
+                    duration: 135.0000
+                },
+                {
+                    metaData: {
+                        artist: "Undertale OST",
+                        title: "It's Raining Somewhere Else"
+                    },
+                    url: "http://kuro.gay/music/undertaleRainy.mp3",
+                    duration: 170.0000
+                },
+                {
+                    metaData: {
+                        artist: "Super Smash Brothers Brawl OST",
+                        title: "The roost"
+                    },
+                    url: "http://kuro.gay/music/brawlRoost.mp3",
+                    duration: 183.0000
+                },
+                {
+                    metaData: {
+                        artist: "Deltarune OST",
+                        title: "Hip Shop"
+                    },
+                    url: "http://kuro.gay/music/deltaruneHip.mp3",
+                    duration: 39.0000
+                },
+                {
+                    metaData: {
+                        artist: "Minecraft OST",
+                        title: "Living mice"
+                    },
+                    url: "http://kuro.gay/music/mineecraftMice.mp3",
+                    duration: 177.0000
+                }
+            ],
+        });
+
+        // Returns a promise indicating when it's done loading.
+        webamp.renderWhenReady(document.getElementById('app'));
+    </script>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

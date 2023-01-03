@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404</title>
+</head>
+<style>
+    @font-face {
+        font-family: DOS;
+        src: url('http://room.kuro.gay/assets/Perfect DOS VGA 437.ttf');
+    }
+
+    body{
+        font-family: DOS, monospace;
+        background-color: rgb(0, 0, 155);
+        font-size: 21px;
+        color: white;
+        margin: 2%;
+    }
+    
+    @media only screen and (max-width: 600px) {
+    .doom{display: none;}
+    }
+
+    .bigbutton{
+        width:640px;
+        height:400px;
+        background-color: black;
+        border-style: solid;
+        border-width: 2px;
+    }
+
+    a{
+        color: white;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+</style>
+<body>
+    <h1>404_PAGE_NOT_FOUND</h1>
+    If this is the first time you're seeing this page,<br>
+    make sure you're entering the right URL. If you are redirected to this page again follow this step:<br><br>
+    Contact @Kuro2427 on Twitter or Kuro2427#2427 on Discord to let him know this page is down.<br><br>
+    Technical information:<br><br>
+    *** STOP: eW91IGhhdmUgdG9vIG11Y2ggZnJlZSB0aW1l>
+
+    <div class="doom">
+        <br><br><br><br>
+        <center>
+            Since you're here, care for a quick game?<br><br>
+            <div class="bigbutton" id="bb"><p><br><br><br><br><br><br><br><a onclick="displayIframe()">Click here to start DOOM</a></p></div>
+            <div id="iframeDisplay"></div><br>
+            Controls:<br><br>WASD - Walk, Mouse - Look and shoot, Space - Use<br>
+            Shift - Sprint, Number keys - Inventory
+
+            <script>
+                function displayIframe() {
+                    document.getElementById("iframeDisplay").innerHTML = "<iframe width=\"640\" height=\"400\" frameborder=\"2\" src=\"https://dos.zone/player/?bundleUrl=https%3A%2F%2Fcdn.dos.zone%2Fcustom%2Fdos%2Fdoom.jsdos?anonymous=1\" allowfullscreen </iframe>";
+                    document.getElementById("bb").style.display="none";
+                }
+            </script>
+        </center>
+    </div>
+    
+</body>
+</html>
