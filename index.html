@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kuro's room</title>
     <meta name="description" content="Kuro2427's very own website on the internet">
-    <link rel="stylesheet" href="assets/xp.css">
+    <link rel="stylesheet" href="https://unpkg.com/xp.css">
+    <link rel="stylesheet" href="assets/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MV3KFV11RC"></script>
     <script>
@@ -23,7 +25,7 @@
 
 <body>
     <main>
-    <div class="window1">
+    <div class="window">
         <div class="title-bar">
             <div class="title-bar-text">Home</div>
             <div class="title-bar-controls">
@@ -42,48 +44,21 @@
             <a href="https://steamcommunity.com/id/Kuro2427/"><img src="assets/steam.svg" width="20px" style="border-radius:2px;"></a>
             <a href="https://www.last.fm/user/Kuro2427"><img src="assets/lastfm.svg" width="20px"></a>
             <a href="https://myanimelist.net/profile/Kuro2427"><img src="assets/mal.png" width="20px" style="border-radius:2px;"></a>
-            <a href="disordInfo.html"><img src="assets/discord.svg" width="20px" style="margin-bottom:-3px; cursor: pointer;"></a>
+            <a onclick="copyDiscord()"><img src="assets/discord.svg" width="20px" style="margin-bottom:-3px; cursor: pointer;"></a>
             
         </div><br>
 
         <div class="center">
-            <button onclick="scrollTowards(0)">The spotlight</button>
             <button onclick="scrollTowards(3)">The dashboard</button>
+            <button onclick="scrollTowards(0)">The spotlight</button>
             <button onclick="scrollTowards(1)">The corkboard</button>
             <button onclick="scrollTowards(2)">Credits</button>
         </div><br>
     </div>
 
-    <div class="window1" id=0>
+    <div class="window" id=3>
         <div class="title-bar">
-            <div class="title-bar-text">The spotlight (yeah, it's a blog in 2022)</div>
-            <div class="title-bar-controls">
-              <button aria-label="Minimize"></button>
-              <button aria-label="Maximize"></button>
-              <button aria-label="Close"></button>
-            </div>
-          </div>
-    
-    <div class="content">
-        <div class="article">
-            <a href="http://kuro.gay/spotlight/welcome/" target="_blank"><img src="spotlight/welcome/articlepreview.png" alt="Article preview">
-            <h1>Welcome to Kuro's room!!</a><img src="assets/sticky.gif"></h1>
-            <p>A quick introduction to Kuro's room and the spotlight blog!<br>
-            04/11/2022 6:28PM</p>
-        </div>
-        <hr>
-        <div class="article">
-            <a href="http://kuro.gay/spotlight/motherfuckingwebsite/" target="_blank"><img src="spotlight/motherfuckingwebsite/articlepreview.png" alt="Article preview">
-            <h1>The motherfucking website saga: Peak internet interaction</a></h1>
-            <p>A tale of little stylesheets and lots of swear words<br>
-            04/12/2022 1:00 PM</p>
-        </div>
-    </div>
-</div>
-
-    <div class="window1" id=3>
-        <div class="title-bar">
-            <div class="title-bar-text">The dashboard (wtf kuro stats???)</div>
+            <div class="title-bar-text">The dashboard (about me + kuro stats)</div>
             <div class="title-bar-controls">
               <button aria-label="Minimize"></button>
               <button aria-label="Maximize"></button>
@@ -92,22 +67,37 @@
           </div>
 
         <div class="content">
+
+                <!--Rainbow text by barrelshifter-->
+                <div class="prose my-4 break-words" style="text-align: center;">
+                    <p style="margin:0px; background: linear-gradient(to right, rgb(179, 6, 169), rgb(239, 38, 103), rgb(244, 46, 44), rgb(255, 165, 9), rgb(253, 252, 0), rgb(85, 172, 47), rgb(11, 19, 253), rgb(168, 4, 175)) padding-box text; -webkit-text-fill-color: transparent; transform: scale(1, 1.5); font-family: Comic Sans MS, sans-serif; font-size: 50px; font-weight: bold; position: relative; z-index: 1; display: inline-block;">
+                        <img src="assets/headache.gif" width="50vw" style="margin-bottom:-5px"> about me! <img src="assets/headache.gif" width="50vw" style="margin-bottom:-5px">
+                    </p>
+                </div><br>
+
+                <div style="margin:auto; text-align:justify; max-width: 550px; font-size: 12px;">
+                    <p>Heyo! My name is Kuro, I'm 18 years old, and I live in Brazil. My pronouns Are He/Him, And I am Gay (shocker, I know) and Asexual.</p>
+
+                    <p>Some of my interests include awesome and cool and badass things like <b>VOCALOID</b>, <b>HORROR</b> (often of the <b>UNFICTION</b> variety), 
+                        and <b>TECHNOLOGY</b> both <b>OLD</b> and <b>NEW.</b> Although I am constantly falling in an out of interest with things, so if you wanna 
+                        have a more precise idea of what I'm currently into, check my "Current Hyperfixations" tab below.
+                    </p>
+                </div>
+
+                <hr>
+
+                <div style="text-align: center;">
+                    <img src="assets/reisen.gif" width="50vw" style="margin-bottom:2px"> <img src="assets/moreinfo.gif"> <img src="assets/reisen.gif" width="50vw" style="margin-bottom:px"><br>
+                </div>
+            
+
+
             <h1>
                 Current hyperfixations:
                 <ul>
-                    <li><a href="https://www.youtube.com/watch?v=cE2hd1mKDZM&list=PLibm-rpGR0iD8pJdfYJCFtw4OZUxuUCuM">One by CheesyHFJ</a></li>
-                    <li>toki pona</li>
-                    <li>The Phantom of the Opera</li>
-                    <li>Flip phones</li>
-                </ul>
-            </h1>
-            <hr>
-            <h1>
-                Current media:
-                <ul>
-                    <li>Digimon Survive</li>
-                    <li>The Walking Dead (Telltale)</li>
-                    <li>Klonoa Phantasy Reverie Series</li>
+                    <li>Unfiction Horror /  ARGs</li>
+                    <li>Rhythm Games</li>
+                    <li>Virtual Reality</li>
                 </ul>
             </h1>
             <hr>
@@ -123,13 +113,42 @@
                     </div>
                 </div>
                 <br>
+                <br>
+                
                 <div class="center">
                     Right now I'm: <a href="https://www.imood.com/users/kuro2427"><img src="https://moods.imood.com/display/uname-kuro2427/trans-1/imood.gif" alt="The current mood of kuro2427 at www.imood.com" border="0" style="margin-bottom: -3px;"></a></div><br>
                 </div>
                 </div>
-                </div>
+</div>
 
-        <div class="window1" id=1>
+<div class="window" id=0>
+    <div class="title-bar">
+        <div class="title-bar-text">The spotlight (my dead blog with 2 whole posts)</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+
+<div class="content">
+    <div class="article">
+        <a href="http://kuro.gay/spotlight/welcome/" target="_blank"><img src="spotlight/welcome/articlepreview.png" alt="Article preview">
+        <h1>Welcome to Kuro's room!!</a><img src="assets/sticky.gif"></h1>
+        <p>A quick introduction to Kuro's room and the spotlight blog!<br>
+        04/11/2022 6:28PM</p>
+    </div>
+    <hr>
+    <div class="article">
+        <a href="http://kuro.gay/spotlight/motherfuckingwebsite/" target="_blank"><img src="spotlight/motherfuckingwebsite/articlepreview.png" alt="Article preview">
+        <h1>The motherfucking website saga: Peak internet interaction</a></h1>
+        <p>A tale of little stylesheets and lots of swear words<br>
+        04/12/2022 1:00 PM</p>
+    </div>
+</div>
+</div>
+
+        <div class="window" id=1>
         <div class="title-bar">
             <div class="title-bar-text">The corkboard (cool online places)</div>
             <div class="title-bar-controls">
@@ -165,7 +184,7 @@
         </div>
     </div>
 
-    <div class="window1" id=2>
+    <div class="window" id=2>
         <div class="title-bar">
             <div class="title-bar-text">Credits</div>
             <div class="title-bar-controls">
@@ -178,12 +197,12 @@
 
     <div class="content">
         <div class="center">
-            <h1><a href="https://botoxparty.github.io/XP.css/">xp.css</a> theme by <a href="https://twitter.com/botoxparty">botoxparty</a>. | <a href="https://github.com/captbaritone/webamp">webamp</a> audio player by <a href="https://twitter.com/captbaritone/">Jordan Eldredge</a>. | <a href="https://webneko.net/">webneko</a> browser pet by ??? | <a href="https://codepen.io/Scarecr0w/pen/qxwMKo">last.fm scrobble embed thingy</a> by <a href="http://www.prashant.me/">Prashant Shrestha</a></h1>
+            <h1><a href="https://botoxparty.github.io/XP.css/">xp.css</a> theme by <a href="https://twitter.com/botoxparty">botoxparty</a>. | <a href="https://webneko.net/">webneko</a> browser pet by ??? | <a href="https://codepen.io/Scarecr0w/pen/qxwMKo">last.fm scrobble embed thingy</a> by <a href="http://www.prashant.me/">Prashant Shrestha</a></h1>
         </div>
     </div>
     </div>
 
-    <div class="window1" id=2>
+    <div class="window" id=2>
         <div class="title-bar">
             <div class="title-bar-text">Button</div>
             <div class="title-bar-controls">
@@ -229,7 +248,7 @@
         <a href="http://fox-info.net/"><img src="http://kuro.gay/assets/buttons/foxinfo.png" width="88" height="33"></a>
     </marquee>
         <div class="updated">
-            Last updated: 11/01/2022 at 9:37 AM <span class="blink">_</span>
+            Last updated: 01/04/2022 at 9:12 PM <span class="blink">_</span>
         </div>
         
     </div>
@@ -238,80 +257,8 @@
     <script>NekoType="black"</script>
     <h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a 
     href="https://webneko.net">Neko</a></h1>
-    <div id="app" style="position:absolute; width:10%; height:10%; right:5%; bottom:20%"> </div>
-
-    <script src="https://unpkg.com/webamp@1.4.2/built/webamp.bundle.min.js"></script>
-    <script>
-        const Webamp = window.Webamp;
-        const webamp = new Webamp({
-            initialTracks: [
-                {
-                    metaData: {
-                        artist: "DJ Mike Llama",
-                        title: "Llama Whippin' Intro"
-                    },
-                    // NOTE: Your audio file must be served from the same domain as your HTML
-                    // file, or served with permissive CORS HTTP headers:
-                    // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
-                    url: "https://cdn.jsdelivr.net/gh/captbaritone/webamp@43434d82cfe0e37286dbbe0666072dc3190a83bc/mp3/llama-2.91.mp3",
-                    duration: 5.322286
-                },
-                {
-                    metaData: {
-                        artist: "Tomodachi Collection OST",
-                        title: "Island at night"
-                    },
-                    url: "http://kuro.gay/music/tomodachiNight.mp3",
-                    duration: 151.0000
-                },
-                {
-                    metaData: {
-                        artist: "Animal Crossing Wild World OST",
-                        title: "3 AM"
-                    },
-                    url: "http://kuro.gay/music/acww3AM.mp3",
-                    duration: 135.0000
-                },
-                {
-                    metaData: {
-                        artist: "Undertale OST",
-                        title: "It's Raining Somewhere Else"
-                    },
-                    url: "http://kuro.gay/music/undertaleRainy.mp3",
-                    duration: 170.0000
-                },
-                {
-                    metaData: {
-                        artist: "Super Smash Brothers Brawl OST",
-                        title: "The roost"
-                    },
-                    url: "http://kuro.gay/music/brawlRoost.mp3",
-                    duration: 183.0000
-                },
-                {
-                    metaData: {
-                        artist: "Deltarune OST",
-                        title: "Hip Shop"
-                    },
-                    url: "http://kuro.gay/music/deltaruneHip.mp3",
-                    duration: 39.0000
-                },
-                {
-                    metaData: {
-                        artist: "Minecraft OST",
-                        title: "Living mice"
-                    },
-                    url: "http://kuro.gay/music/mineecraftMice.mp3",
-                    duration: 177.0000
-                }
-            ],
-        });
-
-        // Returns a promise indicating when it's done loading.
-        webamp.renderWhenReady(document.getElementById('app'));
-    </script>
-    </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>
