@@ -1,0 +1,49 @@
+@font-face {
+    font-family: fn_kurobash;
+    src: url(mineglyph-faithful.ttf);
+  }
+
+body{
+    color: white;
+    text-shadow: 2px 2px #3d3d3d;
+    font-family: "fn_kurobash", sans-serif;
+    font-size: 19px;
+    background-image: url("bg.png");
+}
+
+div.main{
+    margin: auto;
+    text-align: justify;
+    background: rgba(0,0,0,0.5);
+    max-width: 700px;
+    padding: 16px;
+}
+
+div.list{
+    margin: auto;
+    max-width: 580px;
+}
+
+button{
+    color: white;
+    cursor: pointer;
+    background-image: linear-gradient(#535353,#333333);
+    text-shadow: 2px 2px #202020;
+    font-family: "fn_kurobash", sans-serif;
+    font-size: 19px;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+a{
+    color: rgb(221, 28, 14);
+    text-shadow: 2px 2px #851313;
+}
+
+.content {
+    padding: 16px;
+    display: none;
+    overflow: hidden;
+  }
