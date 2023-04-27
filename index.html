@@ -4,256 +4,138 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kuro's room</title>
-    <meta name="description" content="Kuro2427's very own website on the internet">
-    <link rel="stylesheet" href="https://unpkg.com/xp.css">
-    <link rel="stylesheet" href="assets/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MV3KFV11RC"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-MV3KFV11RC');
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="lastfmNP.js"></script>
+    <title>Kuro's Room</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../../../assets/images/favicon.ico">
 </head>
-
 <body>
-    <main>
-    <div class="window">
-        <div class="title-bar">
-            <div class="title-bar-text">Home</div>
-            <div class="title-bar-controls">
-              <button aria-label="Minimize"></button>
-              <button aria-label="Maximize"></button>
-              <button aria-label="Close"></button>
+    <div class="wrapper">
+
+    <div class=sidebar>
+        <div class="sidebar-image"><div class=inner><img src="../assets/Kanae.jpg" title="His processing power is 0.7 kiloflops 😔"></div></div>
+        <div class=box>
+        <div class="center">
+            <p><div class=inner>
+            <div class="imood" style="text-align: center;">I'm feeling: <a href="https://www.imood.com/users/kuro2427"><img src="https://moods.imood.com/display/uname-kuro2427/imood.gif" alt="The current mood of kuro2427 at www.imood.com" border="0"></a></div><br>
+            Right now in my time zone it's: <iframe src="https://free.timeanddate.com/clock/i8tlvrsz/n233/fs12/fcfff/tct/pct/ts1" frameborder="0" width="70" height="14" allowtransparency="true"></iframe>
+        </p></div></div></div>
+
+        <div class="box"><div class="inner">
+            <div class="center">Follow me!</div> <br>
+            <div class="socialmedia">
+                <a href="https://twitter.com/Kuro2427"><img src="assets/images/icons/twitter.svg"></a>
+                <a href="https://wetdry.world/@kuro2427"><img src="assets/images/icons/mastodon.svg"></a>
+                <a href="https://kuro2427.tumblr.com/"><img src="assets/images/icons/tumblr.svg"></a>
+                <a onclick="copyDiscord()" href="#"><img src="assets/images/icons/discord.svg"></a>
+                <a href="https://www.last.fm/user/Kuro2427"><img src="assets/images/icons/lastfm.svg"></a>
+                <a href="https://myanimelist.net/profile/Kuro2427"><img src="assets/images/icons/mal.png" style="border-radius: 5px;"></a>
+                <a href="https://steamcommunity.com/id/Kuro2427/"><img src="assets/images/icons/steam.svg"></a>
+                <a href="https://vndb.org/u224393"><img src="assets/images/icons/vndb.png" style="border-radius: 5px;"></a>
             </div>
-          </div>
+        </div></div>
 
-        <div class="namecard"><img src="assets/lain.gif" width="50vw">&nbsp;&nbsp;<img src="assets/name1.png" width="270vw" height id="plate">&nbsp;&nbsp;<img src="assets/lain.gif" width="50vw"></div>
-        <div class="center"><span id="cap">Random caption goes here</span> <a onclick="refreshCap()" style="cursor:pointer;"><img src="assets/refresh.png" style="margin-bottom:-4px;"></a></div><br>
-        <div class="center">
-            <a href="http://kuro2427.tumblr.com"><img src="assets/tumblr.svg" width="20px"></a> 
-            <a href="http://twitter.com/kuro2427"><img src="assets/twitter.svg" width="20px"></a>
-            <a href="https://cohost.org/kuro2427"><img src="assets/cohost.png" width="20px"></a>
-            <a href="https://steamcommunity.com/id/Kuro2427/"><img src="assets/steam.svg" width="20px" style="border-radius:2px;"></a>
-            <a href="https://www.last.fm/user/Kuro2427"><img src="assets/lastfm.svg" width="20px"></a>
-            <a href="https://myanimelist.net/profile/Kuro2427"><img src="assets/mal.png" width="20px" style="border-radius:2px;"></a>
-            <a onclick="copyDiscord()"><img src="assets/discord.svg" width="20px" style="margin-bottom:-3px; cursor: pointer;"></a>
-            
-        </div><br>
+        <div class="box"><div class="inner">
+            <div class="center">
+                Link to this page!<br><br>
+                <img src="assets/images/buttons/kuro.png">
 
-        <div class="center">
-            <button onclick="scrollTowards(3)">The dashboard</button>
-            <button onclick="scrollTowards(0)">The spotlight</button>
-            <button onclick="scrollTowards(1)">The corkboard</button>
-            <button onclick="scrollTowards(2)">Credits</button>
-        </div><br>
+                <p><a href="https://kuro2427.123guestbook.com/"><img src="assets/images/buttons/guestbook.gif"></a></p>
+
+            </div>
+        </div></div>
+
     </div>
 
-    <div class="window" id=3>
-        <div class="title-bar">
-            <div class="title-bar-text">The dashboard (about me + kuro stats)</div>
-            <div class="title-bar-controls">
-              <button aria-label="Minimize"></button>
-              <button aria-label="Maximize"></button>
-              <button aria-label="Close"></button>
+    <div class="main-wrapper">
+
+    <div class=title>
+        <div class=box><div class=inner><p><a href="../../../"><img src="../../../assets/images/logo.png"></a></p>
+        <p>Home</a> | <a href="../blog">Blog</a> | <a href="../dreamdiary">Dream diary</a> | <a href="../about">About me</a></div></div></p>
+    </div>
+
+    <div class="main single-column">
+    <div class=box><div class=inner>
+
+        <h2>Welcome!!</h2>
+        <p>I'm Kuro! My pronouns are He/Him, I'm 18 years old, I'm Brazilian, I speak English, Portuguese and <a href="https://tokipona.org">toki pona</a>, and this is my website!<br>
+        <p>Kuro's Room has gone through many redesigns and purposes throughout its lifetime, but its current goal is to be home to a blog, my dream diary, some info about me and really anything else I want to share or host!</p>
+        <p>So if you just dropped by really quick to check this place out, or if you'd like to check out some of the pages, welcome to Kuro's Room! I hope you enjoy your stay!</p>
+    </div></div></div>
+
+    <div class="main-single-collum">
+    <div class="box"><div class="inner">
+        <h2>Latest updates</h2>
+        <p>
+            <div class="updates">
+                April 26 2023 9:35 PM - Added all of my previous <a href="dreamdiary/">dream diary</a> entries to the site<br>
+                April 25 2023 10:59 PM - New blog article: <a href="blog/articles/welcome/index.html">Welcome to the new and improved Kuro's Room!</a><br>
+                April 25 2023 9:10 PM - Full website has been remade again :3<br>
             </div>
-          </div>
+         </p>
+    </div></div></div>
 
-        <div class="content">
+    <div class="main single-column">
+        <div class=box><div class=inner>
+    
+            <h2>The fridge</h2>
+            <p>This subsection is where I showcase cool things I'd like to share, but <s>I was too lazy to</s> for one reason or another I couldn't write full a blog article on. So please, if you have the time, check out...</p>
 
-                <div class="namecard"><img src="assets/headache.gif" width="80vw"> <img src="assets/nameplate-cheat.png" width="270vw"> <img src="assets/headache.gif" width="80vw"></div>
-
-                <br>
-
-                <div style="margin:auto; text-align:justify; max-width: 550px; font-size: 12px;">
-                    <p>Heyo! My name is Kuro, I'm 18 years old, and I live in Brazil. My pronouns Are He/Him, And I am Gay (shocker, I know) and Asexual.</p>
-
-                    <p>Some of my interests include awesome and cool and badass things like <b>VOCALOID</b>, <b>HORROR</b> (often of the <b>UNFICTION</b> variety), 
-                        and <b>TECHNOLOGY</b> both <b>OLD</b> and <b>NEW.</b> Although I am constantly falling in an out of interest with things, so if you wanna 
-                        have a more precise idea of what I'm currently into, check my "Current Hyperfixations" tab below.
-                    </p>
-                </div>
-
-                <hr>
-
-                <div class="namecard"><img src="assets/reisen.gif" width="50vw"> <img src="assets/moreinfo.gif" width="270vw"> <img src="assets/reisen.gif" width="50vw"></div>
-            
-
-
-            <h1>
-                Current hyperfixations:
-                <ul>
-                    <li>Unfiction Horror /  ARGs</li>
-                    <li>Rhythm Games</li>
-                    <li>Virtual Reality</li>
-                </ul>
-            </h1>
             <hr>
-            <br>
-                <div class="nowplayingcard">
-                    <div class="nowplayingcontainer-inner">
-                        <img id="trackart" src="#" width="100px">
-                        <h1>Latest last.fm scrobble:</h1>
-                        <div class="trackInfo">
-                            <a id="tracktitle"></a><br>
-                            By <a href="#" id="trackartist"></a>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <br>
-                
-                <div class="center">
-                    Right now I'm: <a href="https://www.imood.com/users/kuro2427"><img src="https://moods.imood.com/display/uname-kuro2427/trans-1/imood.gif" alt="The current mood of kuro2427 at www.imood.com" border="0" style="margin-bottom: -3px;"></a></div><br>
-                </div>
-                </div>
-</div>
 
-<div class="window" id=0>
-    <div class="title-bar">
-        <div class="title-bar-text">The spotlight (my dead blog)</div>
-        <div class="title-bar-controls">
-          <button aria-label="Minimize"></button>
-          <button aria-label="Maximize"></button>
-          <button aria-label="Close"></button>
-        </div>
-      </div>
+            <p><h3>🌐 <a href="https://ballsackradio.com/">Ballsack Radio</a></h3></p>
+            <p>My favourite internet radio. Despite frequent downtimes, when it's up it plays some great music, and it seems to be run by a cool person!</p>
 
-<div class="content">
-    <div class="article">
-        <a href="http://kuro.gay/spotlight/welcome/" target="_blank"><img src="spotlight/welcome/articlepreview.png" alt="Article preview">
-        <h1>Welcome to Kuro's room!!</a><img src="assets/sticky.gif"></h1>
-        <p>A quick introduction to Kuro's room and the spotlight blog!<br>
-        04/11/2022 6:28PM</p>
-    </div>
-    <hr>
-    <div class="article">
-        <a href="http://kuro.gay/spotlight/motherfuckingwebsite/" target="_blank"><img src="spotlight/motherfuckingwebsite/articlepreview.png" alt="Article preview">
-        <h1>The motherfucking website saga: Peak internet interaction</a></h1>
-        <p>A tale of little stylesheets and lots of swear words<br>
-        04/12/2022 1:00 PM</p>
-    </div>
-</div>
-</div>
+            <hr>
 
-        <div class="window" id=1>
-        <div class="title-bar">
-            <div class="title-bar-text">The corkboard (cool online places)</div>
-            <div class="title-bar-controls">
-              <button aria-label="Minimize"></button>
-              <button aria-label="Maximize"></button>
-              <button aria-label="Close"></button>
-            </div>
-          </div>
+            <p><h3>▶️ <a href="https://www.youtube.com/@AmelieDoree">Amelie Doree</a></h3></p>
+            <p>⚠️ CONTENT WARNING: This channel covers adult and often disturbing material, so it's 18+ only! ⚠️</p>
+            <p>This is currently one of the best YouTube video essayists and it's frankly criminal that she only has 21K subscribers as of writing this. If you're into visual novels and eroge, this is THE one stop shop for not only cool media recommendations, but also at times full history lessons on the subject.</p>
 
-        <div class="content">
-            <a href="http://trickmint.gay/"><h1>trickmint.gay</a></h1>
-            <p>Trickmint's swag personal page. If you have autoplay enabled on your browser, you can hear a random song playing in the background. It's still a work-in-progress but it's funny anyways.</p>
-        </div>
-        <hr>
-        <div class="content">
-            <a href="https://sasaja.neocities.org/"><h1>sasaja.neocities.org</a></h1>
-            <p>Literal 10/10 web design and taste in media.</p>
-        </div>
-        <hr>
-        <div class="content">
-            <a href="http://skedgy.xyz/"><h1>skedgy.xyz</a></h1>
-            <p>GIRLFRIENDGIRLFRIENDGIRLFRIENDGIRLFRIEND</p>
-        </div>
-        <hr>
-        <div class="content">
-            <a href="http://ballsackradio.com/"><h1>ballsackradio.com</a></h1>
-            <p>Genuinely the best online radio. It plays awesome music whenever it decides to work (top 10 rarest events in gaming).</p>
-        </div>
-        <hr>
-        <div class="content">
-            <a href="http://fox-info.net/"><h1>fox-info.net</a></h1>
-            <p>Awesome japanese website with fox images.</p>
-        </div>
+            <hr>
+
+            <p><h3>▶️ <a href="https://www.youtube.com/@FNWeeaboo">FNWeeaboo</a></h3></p>
+            <p>One of the best rhythm game channels on YouTube, and DEFINITELY the most overlooked one.<br>His dead rhythm games series is top notch content.</p>
+
+
+            
+        </div></div></div>
+
+    <br>
+
+    <div class=footer>
+        <div class=box><div class=inner><marquee>
+            <a href="https://ermel.org/handcoded/"><img src="../../../assets/images/buttons/handcode.png" style="width: 88px; height: 31px;"></a>
+            <a href="https://www.w3schools.com/html/default.asp"><img src="../../../assets/images/buttons/html.gif"></a>
+            <a href="https://www.mozilla.org/en-US/firefox/new/"><img src="../../../assets/images/buttons/get.gif"></a>
+            <a href="https://code.visualstudio.com/"><img src="../../../assets/images/buttons/vscbutton.gif"></a>
+            <a href="https://bluemaxima.org/flashpoint/"><img src="../../../assets/images/buttons/fpbutton.png"></a>
+            <a href="https://neocities.org/"><img src="../../../assets/images/buttons/neocities-now.gif"></a>
+            <a href="https://archive.org/"><img src="../../../assets/images/buttons/internetarchive.gif"></a>
+            <a href="https://discord.gg/manr6PW6xc"><img src="../../../assets/images/buttons/discord2.gif"></a>
+            <a href="https://sadgrl.online/"><img src="../../../assets/images/buttons/sadgrlonline.gif"></a>
+            <a href="https://dimden.dev/"><img src="../../../assets/images/buttons/dimden.gif"></a>
+            <a href="https://elisttm.space/"><img src="../../../assets/images/buttons/elisttmspace.gif"></a>
+            <a href="https://trickmint.gay"><img src="../../../assets/images/buttons/trickmint.gif"></a>
+            <a href="https://twitter.com/ExtraSome5"><img src="../../../assets/images/buttons/hl.gif"></a>
+        </marquee></div></div>
     </div>
 
-    <div class="window" id=2>
-        <div class="title-bar">
-            <div class="title-bar-text">Credits</div>
-            <div class="title-bar-controls">
-              <button aria-label="Minimize"></button>
-              <button aria-label="Maximize"></button>
-              <button aria-label="Close"></button>
-            </div>
-          </div>
-          
+    <div class="center">Layout by <a href="https://eggramen.neocities.org/code/css_testpages">eggramen</a>.</div>
 
-    <div class="content">
-        <div class="center">
-            <h1><a href="https://botoxparty.github.io/XP.css/">xp.css</a> theme by <a href="https://twitter.com/botoxparty">botoxparty</a>. | <a href="https://webneko.net/">webneko</a> browser pet by ??? | <a href="https://codepen.io/Scarecr0w/pen/qxwMKo">last.fm scrobble embed thingy</a> by <a href="http://www.prashant.me/">Prashant Shrestha</a></h1>
-        </div>
+    <script>
+        //Copy to clipboard
+        function copyDiscord(){
+        var text = "Kuro2427#2427";
+        navigator.clipboard.writeText(text).then(function() {
+            console.log('Async: Copying to clipboard was successful!');
+            alert("Discord ID copied to clipboard!")
+        }, function(err) {
+            console.error('Async: Could not copy text: ', err);
+        });
+        }
+    </script>
+
     </div>
     </div>
-
-    <div class="window" id=2>
-        <div class="title-bar">
-            <div class="title-bar-text">Button</div>
-            <div class="title-bar-controls">
-              <button aria-label="Minimize"></button>
-              <button aria-label="Maximize"></button>
-              <button aria-label="Close"></button>
-            </div>
-          </div>
-          
-
-    <div class="content">
-        <div class="center">
-            <h1>Promote my website for no reason!</h1>
-            <img src="assets/buttons/kuro.png">
-            <textarea rows="2" cols="40"><a href="http://kuro.gay"><img src="http://kuro.gay/assets/buttons/kuro.png"></a></textarea><br><br>
-            (You should probably not hotlink the image tho)
-        </div><br>
-    </div>
-    </div>
-
-    <div class="center">
-        <a href="https://www.hitwebcounter.com" target="_blank"><img src="https://hitwebcounter.com/counter/counter.php?page=7982275&style=0006&nbdigits=6&type=page&initCount=637" title="Free Counter" Alt="web counter"   border="0" /></a>       
-    </div><br>
-
-    </main>
-
-    <div class="center">
-    <marquee>
-        <img src="http://kuro.gay/assets/buttons/hatemac.jpg">
-        <img src="http://kuro.gay/assets/buttons/made_with_windows.gif">
-        <a href="https://www.mozilla.org/en-US/firefox/new/"><img src="http://kuro.gay/assets/buttons/get.gif"></a>
-        <a href="https://www.vgmusic.com/"><img src="http://kuro.gay/assets/buttons/midi_files_now.gif"></a>
-        <img src="http://kuro.gay/assets/buttons/gay.gif">
-        <a href="http://ballsackradio.com/"><img src="http://kuro.gay/assets/buttons/ballsack.png"></a>
-        <a href="https://cyber.dabamos.de/88x31/index.html"><img src="http://kuro.gay/assets/buttons/button_now.gif"></a>
-        <img src="http://kuro.gay/assets/buttons/amiga.gif">
-        <img src="http://kuro.gay/assets/buttons/beyes.gif">
-        <img src="http://kuro.gay/assets/buttons/copy_floppy.gif">
-        <img src="http://kuro.gay/assets/buttons/evangelion.gif">
-        <a href="https://www.w3schools.com/"><img src="http://kuro.gay/assets/buttons/html.gif"></a>
-        <a href="https://ermel.org/handcoded/"><img src="http://kuro.gay/assets/buttons/handcode.png"></a>
-        <a href="https://tokipona.org/"><img src="http://kuro.gay/assets/buttons/tokipona.png"></a>
-        <a href="http://fox-info.net/"><img src="http://kuro.gay/assets/buttons/foxinfo.png" width="88" height="33"></a>
-    </marquee>
-        <div class="updated">
-            Last updated: 01/04/2022 at 9:52 PM <span class="blink">_</span>
-        </div>
-        
-    </div>
-
-    <div class="apps" style="position: fixed; left:10%; top:20%; width: 0%;">
-    <script>NekoType="black"</script>
-    <h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a 
-    href="https://webneko.net">Neko</a></h1>
-
-    <script src="script.js"></script>
-
 </body>
 </html>
