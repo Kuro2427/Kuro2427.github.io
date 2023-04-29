@@ -276,3 +276,12 @@ details{
 span.archivepost{
   padding-left: 10px;
 }
+
+.blogImage{
+  padding: 10px;
+  max-width: 300px;
+  text-align: center;
+  margin: auto;
+  color:gray;
+  text-decoration: underline;
+}
