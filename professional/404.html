@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-ico" href="favicon.ico" />
+    <title>Error 404</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: white;
+        font-family: monospace;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    img{
+        min-width: 200px;
+        max-width: 200px;
+    }
+
+    .or{
+        font-size: 40px;
+        margin-top:-30px;
+        margin-bottom: -30px;
+    }
+
+    .red a{
+        color: red;
+    }
+
+    .blue a{
+        color: blue;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+</style>
+<body>
+    <h1>Error 404</h1>
+    <img src="http://professional.kuro.gay/404.png"><br><br>
+    The page you tried to visit does not seem to exist.<br>
+    Make sure you are typing in the correct URL!<br><br>
+    <h2><span class="red"><a href="http://professional.kuro.gay">Click here to go back home.</a></span></h2><br><br>
+    <div class="or">Or...</div><br><br>
+    <h2><span class="blue"><a onclick="randomHaha()">Click here to watch a random funny video.</a></span></h2><br>
+
+    <script>
+        function randomHaha(){
+            let vids=['https://www.youtube.com/watch?v=FcZd305VI60','https://www.youtube.com/watch?v=8DqGgIgx4KU','https://www.youtube.com/watch?v=1wByjYRMltA',
+            'https://www.youtube.com/watch?v=T6U-p3mlSH8','https://youtu.be/Wb3UrJjAac4','https://www.youtube.com/watch?v=6YIVGXKXRwc','https://www.youtube.com/watch?v=dUGg0qaR4bA',
+            'https://www.youtube.com/watch?v=9dCXET4Cl3M','https://www.youtube.com/watch?v=I482t6JhL4g','https://www.youtube.com/watch?v=0hZYo1Mj6z0','https://www.youtube.com/watch?v=WHDyDKVfGyc',
+            'https://www.youtube.com/watch?v=k9DFpvSqxOo','https://www.youtube.com/watch?v=ruArIh7fJIM','https://www.youtube.com/watch?v=hVVeGgCBojw','https://www.youtube.com/watch?v=Y7WtkdLQ6PM',
+            'https://www.youtube.com/watch?v=JhaNKLjf2ZY'];
+            var randomIndex= Math.floor(Math.random() * vids.length);
+            chosen=vids[randomIndex];
+
+            window.location.href = chosen;
+        }
+    </script>
+</body>
+</html>
