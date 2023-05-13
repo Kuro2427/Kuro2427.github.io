@@ -193,8 +193,6 @@ body {
     }
     
     span.nbh a{
-      text-align: center;
-      text-decoration: underline;
       animation: colorRotate 6s linear 0s infinite;
     }
     
@@ -288,4 +286,19 @@ span.archivepost{
 
 .githubsucks{
   background-color: magenta;
+}
+
+span.kaomoji{
+  font-family: monospace;
+}
+
+@media (orientation: portrait), (max-width: 480px) {
+  .scale{
+    text-align: center;
+    font-size: 2.5vw;
+  }
+}
+
+.scale{
+  text-align: center;
 }
