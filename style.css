@@ -3,9 +3,11 @@
     src: url(assets/fonts/PixelOperator.ttf);
   }
 
+  html{
+    cursor: url(assets/images/cursors/Normal.cur),auto;
+  }
 
 body {
-    cursor: url(assets/images/cursors/Normal.cur),auto;
     font-size: 16px;
     margin: 0;
     background-image: url(assets/images/backgrounds/PS1.png);
