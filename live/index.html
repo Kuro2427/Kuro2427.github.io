@@ -9,31 +9,24 @@
 <body>
 
     <div class="main">
-        <div class="stream">
-            <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
-            <div id="<player div ID>"></div>
-            <script type="text/javascript">
-            var options = {
-                width: 853,
-                height: 480,
-                channel: "channel2427",
-                video: "<video ID>",
-                collection: "<collection ID>",
-                // only needed if your site is also embedded on embed.example.com and othersite.example.com
-                parent: ["kuro.gay"]
-            };
-            var player = new Twitch.Player("<player div ID>", options);
-            player.setVolume(0.5);
-            </script>
+
+        <div id="twitch-embed"></div>
+
+        <!-- Load the Twitch embed JavaScript file -->
+        <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+        <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+        <script type="text/javascript">
+        new Twitch.Embed("twitch-embed", {
+            width: 1194,
+            height: 480,
+            channel: "channel2427",
+            // Only needed if this page is going to be embedded on other websites
+            parent: ["embed.example.com", "othersite.example.com"]
+        });
+        </script>
+
         </div>
-
-            <iframe id="twitch-chat-embed"
-                src="https://www.twitch.tv/embed/channel2427/chat?parent=kuro.gay"
-                height="500"
-                width="350">
-             </iframe>
-
-    </div>
 
     <p>I HATE wawa cat‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️</p>
 

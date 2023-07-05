@@ -1,8 +1,9 @@
-.main{
-
+body{
+    max-width: 900px;
 }
 
-.stream{
-    max-width: 853px;
-    float:left;
+.main{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
 }
