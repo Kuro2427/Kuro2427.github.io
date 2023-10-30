@@ -150,6 +150,32 @@
             console.error('Async: Could not copy text: ', err);
         });
         }
+
+        //Random Titles
+        // Array of possible titles
+        var possibleTitles = [
+            "Sata Andagi!",
+            "Internet Based Life Form",
+            "Get It's While It Is Still",
+            "Topical and Funny Quote Goes Here",
+            "Yeah It's A Perfect Blue Reference",
+            "Refresh for a New Title",
+            "Support Physical Media!",
+            "Also Check Out Trickmint.gay"
+        ];
+
+        // Function to set a random title
+        function setRandomTitle() {
+            // Get a random index from the possibleTitles array
+            var randomIndex = Math.floor(Math.random() * possibleTitles.length);
+
+            // Set the random title as the page's title
+            document.title = "Kuro's Room | "+possibleTitles[randomIndex];
+        }
+
+        // Call the function when the page is loaded and on each refresh
+        window.addEventListener('load', setRandomTitle);
+        window.addEventListener('beforeunload', setRandomTitle);
     </script>
 
     </div>
