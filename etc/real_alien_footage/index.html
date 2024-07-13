@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warning</title>
+</head>
+<style>
+    body{
+        font-family: monospace;
+        background-color: black;
+        color: lime;
+        text-align: center;
+        font-size: 25px;
+        text-shadow : 0px 0px 5px lime;
+    }
+
+    button{
+        font-family: monospace;
+        background-color: black;
+        color: rgb(0, 109, 0);
+        text-align: center;
+        font-size: 25px;
+        text-shadow : 0px 0px 5px rgb(0, 109, 0);
+        text-decoration: underline;
+        border: 0px;
+    }
+
+    button:hover{
+        font-family: monospace;
+        background-color: black;
+        color: lime;
+        text-align: center;
+        font-size: 25px;
+        text-shadow : 0px 0px 5px lime;
+        text-decoration: underline;
+        border: 0px;
+    }
+
+    .blink {
+    animation: blink-animation 1s steps(2, start) infinite;
+    -webkit-animation: blink-animation 1s steps(2, start) infinite;
+    }
+    @keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+    }
+    @-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+    }
+</style>
+<body>
+    <h1>Warning!</h1><br>
+    The page you are about to visit contains footage of a real alien,<br>and thus is not for the faint of heart.<br><br>
+    Do you wish to continue anyways?<span class="blink"> █</span><br><br>
+    <button onclick="window.location.href = 'http:\/\/rakugaki.xyz/etc/real_alien_footage/the_truth';">>Yes</button> <button onclick="window.location.href = 'https:\/\/www.youtube.com/watch?v=WePNs-G7puA'">>No</button>
+</body>
+</html>

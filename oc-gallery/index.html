@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rakugaki - oc gallery</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="main">
+
+        <header>
+            <a href="../"><img src="../assets/images/banner.png" alt="" style="text-align: center;"></a>
+            <div class="navbar">constantly mutating since 2020 <a href="https://en.wikipedia.org/wiki/Swatch_Internet_Time" style="color: black;" title="What's this?"><span class="internettime" id="clock">@000</span></a></div>
+        </header>
+
+        <div class="content">
+
+            <div class="bigwindow">
+                <div class="c"><h1>Welcome to the OC Gallery!</h1></div>
+                <p>This page is an archive of all the incredible drawings awesome people have made of my characters! Please have a look and follow these amazing artists!</p>
+            </div>
+
+            <div class="bigwindow">
+                <h2>Kanae</h2>
+                <p>Kanae is a prototype for a companion robot created by a sole scientist somewhere between the late 80s and early 90s. He has a deep appreciation and love for humans, and an overall very gentle and kind personality.</p>
+                <div class="gallery">
+
+                    <figure>
+                        <a href="pictures/kanae/kuro_comm_fb_alt.png" target="_blank"><img src="pictures/kanae/kuro_comm_fb_alt.png" alt=""></a>
+                        <figcaption>by <a href="https://x.com/SpringlessEcho">SpringlessEcho</a></figcaption>
+                    </figure>
+
+                    <figure>
+                        <a href="pictures/kanae/mastar.jpg"><img src="pictures/kanae/mastar.jpg" alt=""></a>
+                        <figcaption>by <a href="https://x.com/MastarDraws">MastarDraws</a></figcaption>
+                    </figure>
+
+                </div>
+            </div>
+
+            <div class="bigwindow">
+                <h2>Roland</h2>
+                <p>Roland is a 20-something year old reindeer who is somewhat nerdy and awkward, but also deeply obsessed with anything winter and christmas related.</p>
+                <div class="gallery">
+                    <figure>
+                        <a href="pictures/roland/image.png"><img src="pictures/roland/image.png" alt=""></a>
+                        <figcaption>by <a href="https://x.com/kwandyfloss">Kwandyfloss</a></figcaption>
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script type="module">
+
+    import { now } from "https://cdn.pika.dev/dot-beat-time";
+
+    window.onload = function() {
+    // Set the time on the hero in beats
+
+    const setBeatTime = () => {
+        const currentBeatTime = now();
+        const longCurrentBeatTime = now(true);
+        document.getElementById("clock").textContent = `${longCurrentBeatTime}`;
+    };
+
+    setBeatTime();
+
+    setInterval(() => {
+        setBeatTime();
+    }, 1000);
+    }
+    
+</script>
+</html>

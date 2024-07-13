@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>rakugaki - portfolio</title>
+</head>
+<body>
+    
+    <div class="main">
+
+        <header>
+            <a href="../"><img src="../assets/images/banner.png" alt="" style="text-align: center;"></a>
+            <div class="navbar">constantly mutating since 2020 <a href="https://en.wikipedia.org/wiki/Swatch_Internet_Time" style="color: black;" title="What's this?"><span class="internettime" id="clock">@000</span></a></div>
+        </header>
+
+        <div class="content">
+
+            <div class="bigwindow">
+                <div class="c"><h1>Portfolio: Here's a boring one for a change</h1></div>
+                <p>I have a fair selection of skills across a multitude of fields, mainly translation and 3D modelling for games, though I do also have some tangential programming and design knowledge.</p>
+            </div>
+
+            <div class="bigwindow">
+                <div class="c"><h1>Translation</h1></div>
+                <h2><a href="https://www.youtube.com/@SkedgyEdgy">SkedgyEdgy YouTube channel</a> (2021, Ongoing, en-US -> pt-BR)</h2>
+                <p>Since <a href="https://youtu.be/CQ89V5jIJpA">Walter Manhunt</a> I've volunteered as a translator and typesetter for my partner's YouTube channel.</p>
+
+                <hr>
+
+                <h2><a href="http://nitorincmicro.games/">Nitorinc! Touhou Microgames</a> (2019, Stepped down, en-US -> pt-BR)</h2>
+                <p>Nitorinc is a WarioWare style microgame collection featuring characters from the Touhou series. I volunteered to translate a large portion of the game circa 2019 into Portuguese, but I have not contributed further to the project since.</p>
+            </div>
+
+            <div class="bigwindow">
+                <div class="c"><h1>3D Modeling</h1></div>
+                <h2><a href="https://semicola.xyz/rat">Rap Ability Test</a> (2022, Environments and props)</h2>
+                <p>I have modeled several props for Rap Ability Test on Roblox, as well as a multitude of environments for the game's dynamic stages.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+<script type="module">
+
+    import { now } from "https://cdn.pika.dev/dot-beat-time";
+
+    window.onload = function() {
+    // Set the time on the hero in beats
+
+    const setBeatTime = () => {
+        const currentBeatTime = now();
+        const longCurrentBeatTime = now(true);
+        document.getElementById("clock").textContent = `${longCurrentBeatTime}`;
+    };
+
+    setBeatTime();
+
+    setInterval(() => {
+        setBeatTime();
+    }, 1000);
+    }
+    
+</script>
+
+</html>

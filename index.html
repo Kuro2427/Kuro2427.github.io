@@ -2,183 +2,150 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kuro's Room</title>
-    <meta content="Kuro's Room. My own little corner of the web." property="og:description" />
-    <meta content="https://kuro.gay" property="og:url" />
-    <meta content="https://kuro.gay/assets/Kanae.jpg" property="og:image" />
-    <meta content="#08002E" data-react-helmet="true" name="theme-color" />
-    <link rel="stylesheet" href="../style.css">
-    <link rel="icon" type="image/png" href="../../../assets/images/favicon.png" />
+    <link rel="stylesheet" href="style.css">
+    <title>rakugaki - home</title>
+
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="main">
+        <header>
+            <img src="assets/images/banner.png" alt="" style="text-align: center;">
+            <div class="navbar">constantly mutating since 2020 <a href="https://en.wikipedia.org/wiki/Swatch_Internet_Time" style="color: black;" title="What's this?"><span class="internettime" id="clock">@000</span></a></div>
+        </header>
 
-    <div class=sidebar>
-        <div class="sidebar-image"><div class=inner><img src="../assets/Kanae.jpg" title="His processing power is 0.7 kiloflops 😔"></div></div>
-        <div class=box>
-        <div class="center">
-            <p><div class=inner>
-            <div class="imood" style="text-align: center;">I'm feeling: <a href="https://www.imood.com/users/kuro2427"><img src="https://moods.imood.com/display/uname-kuro2427/imood.gif" alt="The current mood of kuro2427 at www.imood.com" border="0"></a></div><br>
-            Right now in my time zone it's: <iframe src="https://free.timeanddate.com/clock/i8tlvrsz/n233/fs12/fcfff/tct/pct/ts1" frameborder="0" width="70" height="14" allowtransparency="true"></iframe>
-        </p></div></div></div>
+        <div class="content">
 
-        <div class="box"><div class="inner">
-            <div class="center">Social Media Graveyard</div> <br>
-            <div class="socialmedia">
-                <a href="https://twitter.com/Kuro2427"><img src="assets/images/icons/twitter.svg"></a>
-                <a href="https://lethallava.land/@kuro"><img src="assets/images/icons/mastodon.svg"></a>
-                <a href="https://kuro2427.tumblr.com/"><img src="assets/images/icons/tumblr.svg"></a>
-                <a onclick="copyDiscord()" href="#"><img src="assets/images/icons/discord.svg"></a>
-                <a href="https://www.last.fm/user/Kuro2427"><img src="assets/images/icons/lastfm.svg"></a>
-                <a href="https://myanimelist.net/profile/Kuro2427"><img src="assets/images/icons/mal.png" style="border-radius: 5px;"></a>
-                <a href="https://steamcommunity.com/id/Kuro2427/"><img src="assets/images/icons/steam.svg"></a>
-                <a href="https://vndb.org/u224393"><img src="assets/images/icons/vndb.png" style="border-radius: 5px;"></a>
+            <div class="rightstuff">
+
+                <div class="pfp"><div class="rightwindow"> <img src="assets/images/kanae.png" alt="" style="margin-bottom: -5px;"></div></div>
+
+                <div class="rightwindow">
+                    <div class="c"><h2>Navigation</h2></div>
+
+                    ☆ <a href="about-me/">About me</a> <br>
+                    ☆ <a href="portfolio/">Portfolio</a> <br>
+                    ☆ <a href="mailto:kuro@semicola.xyz">Contact me</a><br>
+                    ☆ Writing (Coming soon!)<br>
+                    ☆ <a href="oc-gallery/">OC Gallery</a> <br>
+                    ☆ <a href="http://users3.smartgb.com/g/g.php?a=s&i=g36-36665-5f">Guestbook</a> <br>
+                    ☆ <a href="etc/">Et Cetera</a> <br>
+                </div>
+
+                <marquee>
+                    <a href="https://www.w3schools.com/html/default.asp"><img src="../../../assets/images/buttons/html.gif"></a>
+                    <a href="https://www.mozilla.org/en-US/firefox/new/"><img src="../../../assets/images/buttons/get.gif"></a>
+                    <a href="https://code.visualstudio.com/"><img src="../../../assets/images/buttons/vscbutton.gif"></a>
+                    <a href="https://bluemaxima.org/flashpoint/"><img src="../../../assets/images/buttons/fpbutton.png"></a>
+                    <a href="https://neocities.org/"><img src="../../../assets/images/buttons/neocities-now.gif"></a>
+                    <a href="https://archive.org/"><img src="../../../assets/images/buttons/internetarchive.gif"></a>
+                    <a href="https://discord.gg/manr6PW6xc"><img src="../../../assets/images/buttons/discord2.gif"></a>
+                    <a href="https://sadgrl.online/"><img src="../../../assets/images/buttons/sadgrlonline.gif"></a>
+                    <a href="https://dimden.dev/"><img src="https://dimden.dev/services/images/88x31.gif"></a>
+                    <a href="https://elisttm.space/"><img src="../../../assets/images/buttons/elisttmspace.gif"></a>
+                    <a href="https://trickmint.gay"><img src="../../../assets/images/buttons/trickmint.gif"></a>
+                    <a href="https://gayfennecs.neocities.org/"><img src="../../../assets/images/buttons/scrunkly_png.png"></a>
+                    <a href="https://twitter.com/ExtraSome5"><img src="../../../assets/images/buttons/hl.gif"></a>
+                </marquee>
+
+                <div class="rightwindow"> 
+                    <div class="c"><h2>What's New</h2></div>
+                    <div class="updatelog">
+                        - 11/7/24:<br>&nbsp;&nbsp;Remade Website again :3
+                    </div>
+                </div>
+
+                <div class="rightwindow">
+                    <div class="c"><h2>Current Status</h2></div>
+
+                    <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=kuro_2427" defer></script>
+
+                </div>
+
+                <div class="rightwindow">
+                    <div class="c">
+                        <h2>Link to this site!</h2>
+                        <img src="assets/images/button.png" alt="">
+                        <textarea><a href="http://rakugaki.xyz"><img src="http://rakugaki.xyz/assets/images/button.png" alt=""></a></textarea>
+                        <p>Please avoid hotlinking if possible. Bandwith doesn't grow on trees!</p>
+                    </div>
+                </div>
+
             </div>
-        </div></div>
-
-        <div class="box"><div class="inner">
-            <div class="center">
-                <p>Link to this website!<br><br>
-                <img src="assets/images/buttons/kuro.png"></p>
-            </div>
-        </div></div>
-
-    </div>
-
-    <div class="main-wrapper">
-
-    <div class=title>
-        <div class=box><div class=inner><p><a href="../../../"><img src="../../../assets/images/logo.png"></a></p>
-        <p>Home</a> | <a href="../blog">Blog</a> | <a href="../dreamdiary">Dream diary</a> | <a href="../about">About me</a></div></div></p>
-    </div>
-
-    <div class="main single-column">
-    <div class=box><div class=inner>
-
-        <h2>Welcome!!</h2>
-        <p>I'm Kuro! My pronouns are He/Him, I'm 18 years old, I'm Brazilian, I speak English, Portuguese and <a href="https://tokipona.org">toki pona</a>, and this is my website!<br>
-        <p>Kuro's Room has gone through many redesigns and purposes throughout its lifetime, but its current goal is to be home to a blog, my dream diary, some info about me and really anything else I want to share or host!</p>
-        <p>So if you just dropped by really quick to check this place out, or if you'd like to check out some of the pages, welcome to Kuro's Room! I hope you enjoy your stay!</p>
-        <p>If you want to learn more about me, check out the "<a href="about/">About me</a>" page.</p>
-        <p>If you want to check out some of my longer form writing, check out my <a href="blog/">Blog</a>.</p>
-        <p>If you really, really want to get to know me better, check out my <a href="dreamdiary/">Dream diary</a>.</p>
-        <p>And if you want to tell me how cool and awesome of a website this is (trust me, I know), you can...</p><br>
-        <div class="scale"><p><h2><span class="kaomoji">(☞ﾟヮﾟ)☞  </span><span class="nbh"><a href="https://kuro2427.123guestbook.com/">Sign my guestbook!</a></span><span class="kaomoji"> ☜(ﾟヮﾟ☜)</span></h2></p></div>
-        <br>
-
-    </div></div></div>
-
-    <div class="main-single-collum">
-    <div class="box"><div class="inner">
-        <h2>Latest updates</h2>
-        <p>
-            <div class="updates">
-                October 30 2023 08:27 PM - Updated kins and comforts, and the kanae drawing.<br>
-                October 14 2023 4:25 PM - New blog article: <a href="blog/articles/fireball/">Fireball: Disney’s Charming Anime</a><br>
-                April 29 2023 8:00 PM - New blog article: <a href="blog/articles/lomando">An ode to lomando.com</a><br>
-                April 26 2023 9:35 PM - Added all of my previous <a href="dreamdiary/">dream diary</a> entries to the site<br>
-                April 25 2023 10:59 PM - New blog article: <a href="blog/articles/welcome/">Welcome to the new and improved Kuro's Room!</a><br>
-                April 25 2023 9:10 PM - Full website has been remade again :3<br>
-            </div>
-         </p>
-    </div></div></div>
-
-    <div class="main single-column">
-        <div class=box><div class=inner>
-    
-            <h2>The fridge</h2>
-            <p>This subsection is where I showcase cool things I'd like to share, but <s>I was too lazy to</s> for one reason or another I couldn't write full a blog article on. So please, if you have the time, check out...</p>
-
-            <hr>
-
-            <p><h3>🌐 <a href="https://ballsackradio.com/">Ballsack Radio</a></h3></p>
-            <p>My favourite internet radio. Despite frequent downtimes, when it's up it plays some great music, and it seems to be run by a cool person!</p>
-
-            <hr>
-
-            <p><h3>▶️ <a href="https://www.youtube.com/@AmelieDoree">Amelie Doree</a></h3></p>
-            <p>⚠️ CONTENT WARNING: This channel covers adult and often disturbing material, so it's 18+ only! ⚠️</p>
-            <p>This is currently one of the best YouTube video essayists and it's frankly criminal that she only has 21K subscribers as of writing this. If you're into visual novels and eroge, this is THE one stop shop for not only cool media recommendations, but also at times full history lessons on the subject.</p>
-
-            <hr>
-
-            <p><h3>▶️ <a href="https://www.youtube.com/@FNWeeaboo">FNWeeaboo</a></h3></p>
-            <p>One of the best rhythm game channels on YouTube, and DEFINITELY the most overlooked one.<br>His dead rhythm games series is top notch content.</p>
-
-            <hr>
-
-            <p><h3>🌐 <a href="https://7nonsense.neocities.org/">7nonsense</a></h3></p>
-            <p>A stylish website featuring cool photos taken on old and unusual hardware.</p>
-
-
             
-        </div></div></div>
+            <div class="window">
+                <h1>Welcome to rakugaki!</h1>
+                <p>Hi, I'm Kuro and this is my website!</p>
+                <p>rakugaki (lit. sketch) is the latest and greatest version of my little personal corner on the web, previously known as Kuro's room.</p>
+                <p>With this latest refresh, I hope to change not just its looks, but also this site's very core purpose, acting no longer as just a companion to my social media presence, but as my entire online existence, pretty much.</p>
+                <p>In here you'll find artwork of all sorts, opinion pieces, and anything else that I would otherwise post on Twitter.</p>
+                <p>So please, have a look around and enjoy your stay! :)</p>
+            </div>
 
-    <br>
+            <div class="window">
+                <h1>Slogs</h1>
+                <p>Lit. short logs, basically microblogging but I'm trying REAL hard to cut back on my Twitter usage.</p>
 
-    <div class=footer>
-        <div class=box><div class=inner><marquee onmouseover="this.stop();" onmouseout="this.start();">
-            <a href="https://ermel.org/handcoded/"><img src="../../../assets/images/buttons/handcode.png" style="width: 88px; height: 31px;"></a>
-            <a href="https://www.w3schools.com/html/default.asp"><img src="../../../assets/images/buttons/html.gif"></a>
-            <a href="https://www.mozilla.org/en-US/firefox/new/"><img src="../../../assets/images/buttons/get.gif"></a>
-            <a href="https://code.visualstudio.com/"><img src="../../../assets/images/buttons/vscbutton.gif"></a>
-            <a href="https://bluemaxima.org/flashpoint/"><img src="../../../assets/images/buttons/fpbutton.png"></a>
-            <a href="https://neocities.org/"><img src="../../../assets/images/buttons/neocities-now.gif"></a>
-            <a href="https://archive.org/"><img src="../../../assets/images/buttons/internetarchive.gif"></a>
-            <a href="https://discord.gg/manr6PW6xc"><img src="../../../assets/images/buttons/discord2.gif"></a>
-            <a href="https://sadgrl.online/"><img src="../../../assets/images/buttons/sadgrlonline.gif"></a>
-            <a href="https://dimden.dev/"><img src="https://dimden.dev/services/images/88x31.gif"></a>
-            <a href="https://elisttm.space/"><img src="../../../assets/images/buttons/elisttmspace.gif"></a>
-            <a href="https://trickmint.gay"><img src="../../../assets/images/buttons/trickmint.gif"></a>
-            <a href="https://gayfennecs.neocities.org/"><img src="../../../assets/images/buttons/scrunkly_png.png"></a>
-            <a href="https://twitter.com/ExtraSome5"><img src="../../../assets/images/buttons/hl.gif"></a>
-        </marquee></div></div>
-    </div>
+                <div class="slogs">
+                    <embed src="slogs.html" width="520" height="150">
+                </div>
+            </div>
 
-    <div class="center"><p>Layout by <a href="https://eggramen.neocities.org/code/css_testpages">eggramen</a>.</p></div>
+            <div class="window">
+                <h1>Blog</h1>
+                <p>I think "Variety" is the best word to describe this place. There really isn't any set theme here, I'll mostly talk about whatever is on my mind. Expect anything from media reviews, to showcases of cool things around the web, to honestly anything I feel like discussing.</p>
+                <h2><a href="blog/fireball/">Fireball: Disney’s Charming Anime</a> 14/10/2023 04:25 PM</h2>
+                <h2><a href="blog/lomando/">An Ode to lomando.com</a> 29/04/2023 8:00 PM</h2>
+            </div>
 
-    <script>
-        //Copy to clipboard
-        function copyDiscord(){
-        var text = "@Kuro2427";
-        navigator.clipboard.writeText(text).then(function() {
-            console.log('Async: Copying to clipboard was successful!');
-            alert("Discord ID copied to clipboard!")
-        }, function(err) {
-            console.error('Async: Could not copy text: ', err);
-        });
-        }
+            <div class="window">
+                <h1>The Spotlight</h1>
 
-        //Random Titles
-        // Array of possible titles
-        var possibleTitles = [
-            "Sata Andagi!",
-            "Internet Based Life Form",
-            "Get It's While It Is Still",
-            "Topical and Funny Quote Goes Here",
-            "Yeah It's A Perfect Blue Reference",
-            "Refresh for a New Title",
-            "Support Physical Media!",
-            "Also Check Out Trickmint.gay"
-        ];
+                <p>This subsection is where I showcase cool things I'd like to share, but <s>I was too lazy to</s> for one reason or another I couldn't write full a blog article on. So please, if you have the time, check out...</p>
 
-        // Function to set a random title
-        function setRandomTitle() {
-            // Get a random index from the possibleTitles array
-            var randomIndex = Math.floor(Math.random() * possibleTitles.length);
+                <hr>
 
-            // Set the random title as the page's title
-            document.title = "Kuro's Room | "+possibleTitles[randomIndex];
-        }
+                <p><h3>🌐 <a href="https://ballsackradio.com/">Ballsack Radio</a></h3></p>
+                <p>My favourite internet radio. Despite frequent downtimes, when it's up it plays some great music, and it seems to be run by a cool person!</p>
 
-        // Call the function when the page is loaded and on each refresh
-        window.addEventListener('load', setRandomTitle);
-        window.addEventListener('beforeunload', setRandomTitle);
-    </script>
+                <hr>
 
-    </div>
+                <p><h3>▶️ <a href="https://www.youtube.com/@hhhazel">Hazel</a></h3></p>
+                <p>Hazel is THE best video essayist on YouTube right now hands down. She covers some really interesting stuff, and her videos are insanely well written and paced. </p>
+
+                <hr>
+
+                <p><h3>▶️ <a href="https://www.youtube.com/@FNWeeaboo">FNWeeaboo</a></h3></p>
+                <p>One of the best rhythm game channels on YouTube, and DEFINITELY the most overlooked one.<br>His dead rhythm games series is top notch content.</p>
+
+                <hr>
+
+                <p><h3>🌐 <a href="https://7nonsense.neocities.org/">7nonsense</a></h3></p>
+                <p>A stylish website featuring cool photos taken on old and unusual hardware.</p>
+            </div>
+        </div>
     </div>
 </body>
+
+<script type="module">
+    import { now } from "https://cdn.pika.dev/dot-beat-time";
+
+    window.onload = function() {
+    // Set the time on the hero in beats
+
+    const setBeatTime = () => {
+        const currentBeatTime = now();
+        const longCurrentBeatTime = now(true);
+        document.getElementById("clock").textContent = `${longCurrentBeatTime}`;
+    };
+
+    setBeatTime();
+
+    setInterval(() => {
+        setBeatTime();
+    }, 1000);
+    }
+</script>
+
 </html>

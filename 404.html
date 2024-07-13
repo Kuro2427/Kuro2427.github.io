@@ -2,68 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404</title>
+    <title>rakugaki - 404</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <style>
-    @font-face {
-        font-family: DOS;
-        src: url('assets/fonts/DOS.ttf');
+    div.err{
+        margin: auto;
+        text-align: center;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }    
+
+    h1{
+        margin: 5px;
+        font-size: 100px;
     }
 
-    body{
-        font-family: DOS, monospace;
-        background-color: rgb(0, 0, 155);
-        font-size: 21px;
-        color: white;
-        margin: 2%;
-    }
-    
-    @media only screen and (max-width: 600px) {
-    .doom{display: none;}
+    #shadowBox {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Black w/opacity/see-through */
+    border: 3px solid;
     }
 
-    .bigbutton{
-        width:640px;
-        height:400px;
-        background-color: black;
-        border-style: solid;
-        border-width: 2px;
+    .rainbow {
+    animation: colorRotate 6s linear 0s infinite;
     }
 
-    a{
-        color: white;
-        cursor: pointer;
-        text-decoration: underline;
+    @keyframes colorRotate {
+    from {
+        color: #6666ff;
     }
-
+    10% {
+        color: #0099ff;
+    }
+    50% {
+        color: #00ff00;
+    }
+    75% {
+        color: #ff3399;
+    }
+    100% {
+        color: #6666ff;
+    }
+    }
 </style>
+
 <body>
-    <h1>404_PAGE_NOT_FOUND</h1>
-    If this is the first time you're seeing this page,<br>
-    make sure you're entering the right URL. If you are redirected to this page again follow this step:<br><br>
-    Contact @Kuro2427 on Twitter or Discord to let him know this page is down.<br><br>
-    Technical information:<br><br>
-    *** STOP: eW91IGhhdmUgdG9vIG11Y2ggZnJlZSB0aW1l>
-
-    <div class="doom">
-        <br><br><br><br>
-        <center>
-            Since you're here, care for a quick game?<br><br>
-            <div class="bigbutton" id="bb"><p><br><br><br><br><br><br><br><a onclick="displayIframe()">Click here to start DOOM</a></p></div>
-            <div id="iframeDisplay"></div><br>
-            Controls:<br><br>WASD - Walk, Mouse - Look and shoot, Space - Use<br>
-            Shift - Sprint, Number keys - Inventory
-
-            <script>
-                function displayIframe() {
-                    document.getElementById("iframeDisplay").innerHTML = "<iframe width=\"640\" height=\"400\" frameborder=\"2\" src=\"https://dos.zone/player/?bundleUrl=https%3A%2F%2Fcdn.dos.zone%2Fcustom%2Fdos%2Fdoom.jsdos?anonymous=1\" allowfullscreen </iframe>";
-                    document.getElementById("bb").style.display="none";
-                }
-            </script>
-        </center>
+    <div class="err"><h1>404</h1><br>
+        <iframe width="415" height="315" src="https://www.youtube.com/embed/-RFunvF0mDw?si=1kT0diHTaYgW7IGD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br><br>
+        <span class="rainbow">there's nobody here...</span>
     </div>
-    
 </body>
 </html>

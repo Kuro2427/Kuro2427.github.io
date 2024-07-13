@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rakugaki - et cetera</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="main">
+
+        <header>
+            <a href="../"><img src="../assets/images/banner.png" alt="" style="text-align: center;"></a>
+            <div class="navbar">constantly mutating since 2020 <a href="https://en.wikipedia.org/wiki/Swatch_Internet_Time" style="color: black;" title="What's this?"><span class="internettime" id="clock">@000</span></a></div>
+        </header>
+
+        <div class="content">
+            <div class="bigwindow">
+
+            <h1>Et cetera - Home of shitposts and not much else right now!</h1>
+            <p>This page is dedicated to all the weird little stuff that doesn't quite belong in any other categories, but I'd still like to have up on the web. Right now it's mostly low effort shitposts. But more stuff might be added here eventually - or not, who knows?</p>
+
+            </div>
+
+            <div class="bigwindow">
+            
+            <h2><a href="ciabatta/">Ciabatta Clicker</a></h2>
+            <p>A low effort Cookie Clicker parody made to one-up a friend's equally low effort cookie clicker parody.</p>
+
+            </div>
+
+            <div class="bigwindow">
+
+            <h2><a href="real_alien_footage/">Real alien footage</a></h2>
+            <p>O dono dessa conta foi morto.</p>
+
+            </div>
+
+            <div class="bigwindow">
+
+            <h2><a href="secret/">Admin panel login</a></h2>
+            <p>TODO: Remove this link from public page</p>
+
+            </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script type="module">
+
+    import { now } from "https://cdn.pika.dev/dot-beat-time";
+
+    window.onload = function() {
+    // Set the time on the hero in beats
+
+    const setBeatTime = () => {
+        const currentBeatTime = now();
+        const longCurrentBeatTime = now(true);
+        document.getElementById("clock").textContent = `${longCurrentBeatTime}`;
+    };
+
+    setBeatTime();
+
+    setInterval(() => {
+        setBeatTime();
+    }, 1000);
+    }
+    
+</script>
+</html>
