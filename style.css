@@ -149,6 +149,7 @@ body{
     font-smooth: never;
     -webkit-font-smoothing : none;
     image-rendering: pixelated;
+    padding: 20px;
 }
 
 a{
@@ -169,28 +170,20 @@ h2{
 
 
 div.main{
-
+    margin:auto;
+    max-width: 800px;
     border: 2px solid white;
     border-radius: 10px;
     padding: 10px;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
 }
 
 div.content{
     margin-top: 10px;
-    width: 800px;
-    height: 605px;
-    overflow: auto;
 }
 
 div.rightstuff{
     float: right;
-    width: 203px;
+    max-width: 203px;
 }
 
 .rightstuff marquee{
@@ -206,13 +199,15 @@ div.navbar{
 }
 
 div.window{
+    background-color: black;
     padding: 5px 20px 20px 20px;
     border: 2px solid white;
-    width: 545px;
+    max-width: 545px;
     margin-bottom: 10px;
 }
 
 div.rightwindow{
+    background-color: black;
     padding: 10px;
     border: 2px solid white;
     margin-bottom: 10px;
@@ -232,6 +227,10 @@ div.rightwindow{
 
 span.internettime{
     float: right;
+}
+
+header img{
+    max-width: 100%;
 }
 
 div.updatelog{
