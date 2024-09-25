@@ -234,6 +234,8 @@ header img{
 }
 
 div.updatelog{
+    padding: 10px;
+    border: 2px solid white;
     overflow: auto;
     max-height: 64px;
 }
