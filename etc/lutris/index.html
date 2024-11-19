@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🦦 Dictionarium Lutris</title>
+
+    <!--Google font stuff-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=share" />
+</head>
+<style>
+    html{
+        background-color: wheat;
+        background-image: url(paper.png);
+    }
+
+    body{
+        font-family: "EB Garamond",'Times New Roman', Times, serif;
+        max-width: 700px;
+        margin:auto;
+        padding: 10px;
+    }
+
+    h1{
+        margin:0px;
+    }
+
+    li{
+        margin-bottom: 10px;
+    }
+
+    a{
+        color: black;
+        cursor: pointer;
+    }
+
+    header img{
+        float:right;
+        margin-top: -7%;
+    }
+
+    span.material-symbols-outlined{
+        float: right;
+    }
+
+</style>
+<body>
+    <header>
+        <h1>Dictionarium Lutris</h1>
+        <img src="otter.png" alt="" width="64px">
+        <span>Ordo post insaniam. est. 2024</span>
+    </header>
+
+    <p>Welcome to Dictionarium Lutris. This project aims to compile and define the often nonsensical terms used by me and my friends.</p>
+    <p>It is a semi-open source project. Submissions are sent in via the appropriate thread on the server's forum, and curated and formatted by me. Please enjoy your stay.</p>
+
+    <hr>
+
+    <div class="entry" id="scrungle">
+        <span class="material-symbols-outlined"><a onclick="share('scrungle')">share</a></span>
+        <div class="title"><h2>Scrungle /ˈskrʌŋɡəl/</h2></div>
+        <ol>
+            <li>[Adjective] Something that looks broken or otherwise messed up, typically referring to computer graphics, art or animals.</li>
+            <li>[Verb] To mess up, or rather, scrungle something.</li>
+        </ol>
+        <p><i>"Wow, look at the scrungled ass topology on that model"</i></p>
+        <p><i>"Don't set the texture compression to poor, that scrungles them"</i></p>
+    </div>
+
+    <hr>
+
+    <div class="entry" id="youwould">
+        <span class="material-symbols-outlined"><a onclick="share('youwould')">share</a></span>
+        <h2>You look like you would /juː lʊk laɪk juː wʊd/</h2>
+        <ol>
+            <li>[Interjection] A <a href="https://www.youtube.com/watch?v=aqOcoKxJdrI">quote from The Angry Birds Movie</a>, typically used lightheartedly to poke fun at someone for saying or doing something that matches their perceived personality or customs.</li>
+        </ol>
+        <p><i>"Guys, I just bought another old computer"<br>"Yeah you look like you would "</i></p>
+    </div>
+
+    <hr>
+
+    <div class="entry" id="goodeditor">
+        <span class="material-symbols-outlined"><a onclick="share('goodeditor')">share</a></span>
+        <h2>Yeah I'm a good editor /jeə aɪm ə gʊd ˈedɪtə/</h2>
+        <ol>
+            <li>[Interjection] A phrase commonly used to criticize a creative artist/work in reference to it being horridly bad or unpolished based off of <a href="img/caption-2.gif">an ironic gif</a>. Editor can be used interchangeably for any other type of work or art form. Shortened from “yeah I am a good editor you can hire me for 50$ a minute.”</li>
+        </ol>
+        <p><i>“Hey look at this messy artwork/editing/modeling”<br>“yeah I’m a good artist/editor/modeler you can hire me at 50$ a minute”</i></p>
+    </div>
+
+    <hr>
+
+    <div class="entry" id="thisyou">
+        <span class="material-symbols-outlined"><a onclick="share('thisyou')">share</a></span>
+        <h2>Is this you /ɪz ðɪs jʊ/</h2>
+        <ol>
+            <li>[Phrase] Commonly used to lightheartedly point out something related to a person. Typically character or animal that they relate to or are known to like. <br> Other common variations include “Is this what you look like (/ɪz ðɪs wɒt jʊ lʊk laɪk/)” and “This is what you look like (/ðɪs ɪz wɒt jʊ lʊk laɪk/)”</li>
+        </ol>
+        <p><i>“Hey Lily, is this what you look like”<br>“Yeah that’s meeeee :3”</i></p>
+    </div>
+
+    <footer>
+        <hr>
+        Curated by <a href="https://rakugaki.xyz">Kuro2427</a>, written by <a href="https://discord.gg/skedgy">you</a>.
+    </footer>
+</body>
+
+<script>
+    window.addEventListener('load', function () {
+
+    if (window.location.hash == '') {
+        return false;
+    }
+
+    var el = document.querySelector(window.location.hash);
+
+    if (el !== null) {
+
+        el.scrollIntoView({ behavior: 'smooth' });
+
+    }
+
+    }, false);
+
+    function share(text) {
+    // Use the Clipboard API
+    navigator.clipboard.writeText('https://rakugaki.xyz/etc/lutris#'+text).then(() => {
+        alert('Shareable link copied to clipboard!');
+    }).catch(err => {
+        console.error('Failed to copy text: ', err);
+    });
+    }
+</script>
+</html>
