@@ -44,6 +44,20 @@
     header img{
         max-width: 100%;
     }
+
+    button{
+        border-radius: 0px;
+        font-family:'main', monospace;
+        font-size: 16px;
+        color: black;
+        background-color: white;
+        border:2px solid gray;
+    }
+    
+    
+    button:active{
+        background-color: darkgray;
+    }
     
     
     div.main{
