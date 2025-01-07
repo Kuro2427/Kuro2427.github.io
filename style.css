@@ -75,8 +75,12 @@
     }
     
     div.rightstuff{
-        float: right;
-        width: 35vw;
+        display: none;
+    }
+    
+    div.mobilenav{
+        display: block;
+        text-align: center;
     }
 
     .pfp{
@@ -102,7 +106,6 @@
     div.window{
         padding: 5px 20px 20px 20px;
         border: 2px solid white;
-        width: 40vw;
         margin-bottom: 10px;
     }
     
@@ -212,6 +215,10 @@ div.content{
 div.rightstuff{
     float: right;
     max-width: 203px;
+}
+
+div.mobilenav{
+    display: none;
 }
 
 .rightstuff marquee{
